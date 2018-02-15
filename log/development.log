@@ -1,0 +1,346 @@
+Started GET "/" for 127.0.0.1 at 2018-02-15 20:40:58 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (14.8ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 2732ms (Views: 2546.4ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:41:18 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSaL/suX+KssIZPP9SD9aHClVUwwVFZPYRIN6rJY4Bn4C6jGwedZbRr7D6gFzyOXnVBrORkiyT2r0CN9m/E6Ow==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 264ms
+
+
+
+RestClient::UnprocessableEntity - 422 Unprocessable Entity:
+  app/services/search_movie.rb:21:in `search_a_movie'
+  app/services/search_movie.rb:11:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/333f269af1cd64a2/variables" for 127.0.0.1 at 2018-02-15 20:41:18 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:43:13 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSaL/suX+KssIZPP9SD9aHClVUwwVFZPYRIN6rJY4Bn4C6jGwedZbRr7D6gFzyOXnVBrORkiyT2r0CN9m/E6Ow==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 215ms
+
+
+
+RestClient::UnprocessableEntity - 422 Unprocessable Entity:
+  app/services/search_movie.rb:21:in `search_a_movie'
+  app/services/search_movie.rb:11:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/9e3b5c4aa2dde8ac/variables" for 127.0.0.1 at 2018-02-15 20:43:13 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:43:18 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSaL/suX+KssIZPP9SD9aHClVUwwVFZPYRIN6rJY4Bn4C6jGwedZbRr7D6gFzyOXnVBrORkiyT2r0CN9m/E6Ow==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 197ms
+
+
+
+RestClient::UnprocessableEntity - 422 Unprocessable Entity:
+  app/services/search_movie.rb:21:in `search_a_movie'
+  app/services/search_movie.rb:11:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/40e220ca7d3dd76d/variables" for 127.0.0.1 at 2018-02-15 20:43:18 +0100
+Started POST "/__better_errors/40e220ca7d3dd76d/variables" for 127.0.0.1 at 2018-02-15 20:43:36 +0100
+Started POST "/__better_errors/40e220ca7d3dd76d/variables" for 127.0.0.1 at 2018-02-15 20:43:42 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:44:55 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSaL/suX+KssIZPP9SD9aHClVUwwVFZPYRIN6rJY4Bn4C6jGwedZbRr7D6gFzyOXnVBrORkiyT2r0CN9m/E6Ow==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 6ms
+
+
+
+NoMethodError - undefined method `find' for Tmdb::Movie:Class:
+  app/services/search_movie.rb:21:in `search_a_movie'
+  app/services/search_movie.rb:11:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/c7a0c14f05df5492/variables" for 127.0.0.1 at 2018-02-15 20:44:55 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 20:50:27 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.7ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 841ms (Views: 665.2ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:50:40 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YSr15Xbc1ScRaxANMSouNG0px2daOlYdbdf85uAAROZUB9bdfKx04SexjGrBxfDLgNz5EnNMyW+nFdJxyamexA==", "search"=>{"text"=>"terminator"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 8ms
+
+
+
+NoMethodError - undefined method `find' for Tmdb::Movie:Class:
+  app/services/search_movie.rb:19:in `search_a_movie'
+  app/services/search_movie.rb:9:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/b92c32941e1b4247/variables" for 127.0.0.1 at 2018-02-15 20:50:40 +0100
+Started POST "/__better_errors/c7a0c14f05df5492/variables" for 127.0.0.1 at 2018-02-15 20:51:49 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 20:59:26 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (14.3ms)
+  Rendered shared/_header.html.erb (0.5ms)
+Completed 200 OK in 772ms (Views: 586.1ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 20:59:33 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Q+Ei+UL2HXYJ0Q7UudgCCcMXwucvN+ecmaR8PmsM/3kIqez73t5s+792FyiCL73yvlhfrXKQOy4pL9n0AXp3w==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 270ms
+
+
+
+RestClient::UnprocessableEntity - 422 Unprocessable Entity:
+  app/services/search_movie.rb:19:in `search_a_movie'
+  app/services/search_movie.rb:9:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/acbf625bdcbef888/variables" for 127.0.0.1 at 2018-02-15 20:59:33 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:06:16 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (8.5ms)
+  Rendered shared/_header.html.erb (0.6ms)
+Completed 200 OK in 557ms (Views: 357.9ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:06:21 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JD/TPOYbZcJKONt8gx2aTC+Dc0TnZEanROo6DktqszIREvAE7GvEBHziRxtz8kSzwnZNMc4S2dWOKBSZYsNpEA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 245ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:19:in `search_a_movie'
+  app/services/search_movie.rb:9:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/8063d3e1d89f4a46/variables" for 127.0.0.1 at 2018-02-15 21:06:21 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:19:41 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 180ms
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/movies_controller.rb:3:in `search'
+
+Started POST "/__better_errors/842ffce530f9ddf5/variables" for 127.0.0.1 at 2018-02-15 21:19:43 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:20:34 +0100
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/movies_controller.rb:7:in `'
+
+Started POST "/__better_errors/3525c988dda813c3/variables" for 127.0.0.1 at 2018-02-15 21:20:34 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:20:57 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (8.1ms)
+  Rendered shared/_header.html.erb (0.6ms)
+Completed 200 OK in 358ms (Views: 354.5ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:21:01 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jw5W4HvskVJvjsDqCOF/OfnfVJfvnzG2eBiaS06kvg4SI3XYcZwwlFlUXI34DqHGFCpq4sbprsSy2rTcZw1kLA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 252ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:19:in `search_a_movie'
+  app/services/search_movie.rb:9:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/e65d2b1fc92fad9a/variables" for 127.0.0.1 at 2018-02-15 21:21:01 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:23:46 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jw5W4HvskVJvjsDqCOF/OfnfVJfvnzG2eBiaS06kvg4SI3XYcZwwlFlUXI34DqHGFCpq4sbprsSy2rTcZw1kLA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 5ms
+
+
+
+NoMethodError - undefined method `movie' for Tmdb::Search:Class:
+  app/services/search_movie.rb:19:in `search_a_movie'
+  app/services/search_movie.rb:9:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/b4e3e940389a619f/variables" for 127.0.0.1 at 2018-02-15 21:23:46 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:30:10 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (14.7ms)
+  Rendered shared/_header.html.erb (0.7ms)
+Completed 200 OK in 590ms (Views: 401.4ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:30:14 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ns2KZH+hZnMiV+o9B8Jd1uijst7ygLls2qyIrG4R3Q6r4KlcddHHtRSNdlr3LYMpBVaMq9v2Jh4QbqY7R7gHLA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 235ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:17:in `search_a_movie'
+  app/services/search_movie.rb:8:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/b4e0e80c0bd7eb84/variables" for 127.0.0.1 at 2018-02-15 21:30:15 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:32:38 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ns2KZH+hZnMiV+o9B8Jd1uijst7ygLls2qyIrG4R3Q6r4KlcddHHtRSNdlr3LYMpBVaMq9v2Jh4QbqY7R7gHLA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 228ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:17:in `search_a_movie'
+  app/services/search_movie.rb:8:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/6524463f42b02d5d/variables" for 127.0.0.1 at 2018-02-15 21:32:38 +0100
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:32:42 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ns2KZH+hZnMiV+o9B8Jd1uijst7ygLls2qyIrG4R3Q6r4KlcddHHtRSNdlr3LYMpBVaMq9v2Jh4QbqY7R7gHLA==", "search"=>{"text"=>"titanic"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 784ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:17:in `search_a_movie'
+  app/services/search_movie.rb:8:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/70c660e5724f22ad/variables" for 127.0.0.1 at 2018-02-15 21:32:43 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:33:28 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.7ms)
+  Rendered shared/_header.html.erb (0.6ms)
+Completed 200 OK in 488ms (Views: 289.6ms)
+
+
+Started POST "/movies/search" for 127.0.0.1 at 2018-02-15 21:33:33 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/movies/search"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/movies/search" for 127.0.0.1 at 2018-02-15 21:34:07 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/movies/search"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/movies/search" for 127.0.0.1 at 2018-02-15 21:34:37 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/movies/search"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/__better_errors/70c660e5724f22ad/variables" for 127.0.0.1 at 2018-02-15 21:34:41 +0100
+Started GET "/" for 127.0.0.1 at 2018-02-15 21:34:49 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.0ms)
+  Rendered shared/_header.html.erb (0.7ms)
+Completed 200 OK in 558ms (Views: 378.5ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2018-02-15 21:34:54 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"++GofdRgGT6bQdy4X+qTSsP5hntR/OfPTWkh5W2ZG37OzItF3hC4+K2bQN+vBU21Lgy4DniKeL2Hqw9yRDDBXA==", "search"=>{"text"=>"terminator"}, "commit"=>"Chercher le film"}
+Completed 500 Internal Server Error in 251ms
+
+
+
+NoMethodError - undefined method `collect' for nil:NilClass:
+  app/services/search_movie.rb:17:in `search_a_movie'
+  app/services/search_movie.rb:8:in `perform'
+  app/controllers/movies_controller.rb:4:in `search'
+
+Started POST "/__better_errors/7d0fc3d31b61f144/variables" for 127.0.0.1 at 2018-02-15 21:34:54 +0100

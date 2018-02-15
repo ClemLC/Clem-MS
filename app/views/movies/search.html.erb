@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <%= form_for :search, url: "/search" do |form| %>
+      <div class="form-group">
+        <div class="centered">
+          <%= form.text_field :text, class: "form-control" %>
+        </div>
+      </div>
+      <%= form.submit "Chercher le film", class: "btn btn-default btn-primary" %>
+      <% end  %>
+    </div>
+<br><br>
+
+<% if $results%>
+    <% if $results.results[0] %>
+    <h1>Resultats de la recherche:</h1>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="#">#</th>
+          <th scope="Title">Titre</th>
+          <th scope="release_date">Date de sortie</th>
+          <th scope="Picture">Affiche</th>
+        </tr>
+      </thead>
+      <tbody>
+      <%i=1%>
+      <%$results.results.each do |value|%>
+        <tr>
+          <td><%=i%></td>
+          <td><%=value.title%></td>
+          <td><%=value.release_date%></td>
+          <td><%= image_tag "https://image.tmdb.org/t/p/w500#{value.poster_path}",:width => '160' %></td>
+          <%i+=1%>
+        </tr>
+        <%break if i==21%>
+      <%end%>
+      <%else%>
+      <p> Désolé, pas de résultats pour ta recherche </p>
+      </tbody>
+    </table>
+  <%end%>
+<%end%>
+  </div>
+</div>
